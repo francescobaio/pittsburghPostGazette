@@ -22,7 +22,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script type="text/javascript">
         $(document).ready(function () {
-            $(".toggle-mnu").on("click", function () {
+            $(".row-2-sx").on("click", function () {
                 $("#hidden-menu").toggleClass("slide-menu");
                 $(".aside-ads-banner-sx").toggleClass("aside-ads-banner-hide");
                 $(".aside-ads-banner-dx").toggleClass("aside-ads-banner-hide");
@@ -38,8 +38,10 @@
             document.body.scrollTop = 0;
             document.documentElement.scrollTop = 0;
         }
-
+        
     </script>
+
+
 </head>
 
 
@@ -90,7 +92,7 @@
     <div class="row-2">
 
         <div class="row-2-sx">
-            <a href="#" class="toggle-mnu">
+            <a href="#" onclick="slideFunction()" class="toggle-mnu">
                 <span class="row-2-sx-toggle-menu"></span>
                 <span class="row-2-sx-text">MENU</span>
             </a>
