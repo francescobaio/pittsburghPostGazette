@@ -794,6 +794,8 @@ header {
     flex-basis: 32%;
 }
 
+
+
 /* END PAGE-SECTION RULES*/
 
 /* START PAGE-ASIDE RULES*/
@@ -967,7 +969,7 @@ header {
     }
 
     .page-main-other-item-1 {
-        margin-bottom: 1.2rem;
+        margin-bottom: 30px;
     }
 
 
