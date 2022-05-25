@@ -19,7 +19,24 @@ body {
 
 img {
     max-width: 100%;
+    display: inline-block;
+    position: relative;
 }
+
+img:after{
+    content:"";
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    z-index: 0;
+    position: absolute;
+    opacity: .7;
+    top:0;
+    left:0;
+    background-color: red;
+}
+
+
 
 
 h2 {
@@ -242,6 +259,7 @@ header {
     flex-direction: row;
     flex-wrap: nowrap;
     align-items: center;
+    z-index:10
 }
 
 
@@ -310,11 +328,14 @@ header {
 
 .row-2-sx-buttons ul li {
     margin: 0 0.6rem 0 0;
-
 }
 
 
-.row-2-sx-buttons ul li a {
+
+
+
+
+.row-2-sx-buttons a {
 
 
     font-weight: normal;
@@ -322,9 +343,10 @@ header {
     border: 1px solid #777;
     border-radius: 5px;
     color: white;
+    font-size: 1rem;
 }
 
-.row-2-sx-buttons ul li a:hover {
+.row-2-sx-buttons  a:hover {
     background-color: white;
     color: black;
 }
@@ -337,7 +359,9 @@ header {
     height: 2.5rem;
 }
 
-
+.row-2-sx-butt{
+    float:left;
+}
 .gazette-logo {
     float: left;
     width: 40px;
@@ -943,7 +967,7 @@ header {
     }
 
     .page-main-other-item-1 {
-        margin-bottom: 30px;
+        margin-bottom: 1.2rem;
     }
 
 
@@ -978,6 +1002,15 @@ header {
     .page-main-content-item img {
         width: 100%;
     }
+
+
+    .slide-menu {
+        width: 50%;
+        top: 50px;
+        height: 1600px;
+        z-index:100000;
+    }
+
 
 
 }
@@ -1037,8 +1070,8 @@ header {
 
     .slide-menu {
         width: 50%;
-        top: 50px;
-        height: 1550px;
+        height: 1600px;
+        z-index:100000;
     }
 
 
